@@ -27,7 +27,7 @@ public class Innlev8Main {
 		leBox.add(leQuestion);
 		leBox.add(leTextField);
 		leBox.add(leConsole);
-		leBox.add(leButton);
+		//leBox.add(leButton);
 		
 		setVisuals(leBox, dim, leQuestion, leConsole);
 		
@@ -35,8 +35,6 @@ public class Innlev8Main {
 		ReadGuess leGuess = new ReadGuess(leTextField, leConsole, randomNumber);
 		leButton.addActionListener(leGuess);
 		leTextField.addActionListener(leGuess);
-		
-		leConsole.setText(leGuess.toString());
 		
 		leBox.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		//leBox.pack();
@@ -53,8 +51,8 @@ public class Innlev8Main {
 		leConsole.setWrapStyleWord(true);
 		leBox.setUndecorated(true);
 		//leBox.setShape(new RoundRectangle2D.Double(10, 10, 100, 100, 50, 50));
-		leBox.setSize(350, 90);
-		leBox.setBackground(new Color(0.0f,0.0f,0.0f,1.0f));
+		leBox.setSize(350, 60);
+		leBox.setBackground(new Color(0.0f,0.0f,0.0f,0.9f));
 		leBox.setLocation(dim.width/2-leBox.getSize().width/2, dim.height/2-leBox.getSize().height/2);
 	}
 
