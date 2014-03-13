@@ -37,7 +37,7 @@ public class Innlev8Main {
 		leTextField.addActionListener(leGuess);
 		
 		leBox.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//leBox.pack();
+		
 		leBox.setVisible(true);
 
 	}
@@ -51,7 +51,7 @@ public class Innlev8Main {
 		leConsole.setWrapStyleWord(true);
 		leBox.setUndecorated(true);
 		//leBox.setShape(new RoundRectangle2D.Double(10, 10, 100, 100, 50, 50));
-		leBox.setSize(350, 60);
+		leBox.setSize(350, 200);
 		leBox.setBackground(new Color(0.0f,0.0f,0.0f,0.9f));
 		leBox.setLocation(dim.width/2-leBox.getSize().width/2, dim.height/2-leBox.getSize().height/2);
 	}
